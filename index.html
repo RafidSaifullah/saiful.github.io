@@ -3,53 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Saiful Islam | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Md. Saiful Islam | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f2ff;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    header nav a:hover {
+      color: #4f46e5;
+    }
+    .btn {
+      background-color: #4f46e5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .left img {
+      width: 280px;
+      border-radius: 10px;
+    }
+    .exp-badge {
+      position: absolute;
+      background-color: #4f46e5;
+      color: #fff;
+      padding: 16px;
+      border-radius: 50%;
+      font-size: 20px;
+      top: 20px;
+      left: 230px;
+      font-weight: bold;
+    }
+    .right h2 {
+      color: #4f46e5;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+    .right h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+    .highlight {
+      color: #4f46e5;
+    }
+    .right p {
+      max-width: 600px;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+    .info {
+      display: flex;
+      gap: 40px;
+      font-size: 14px;
+    }
+    .info div span {
+      display: block;
+      font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .exp-badge {
+        position: static;
+        margin-top: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <img src="assets/profile.jpg" alt="Saiful Islam" class="profile-img" />
-      <h1>Saiful Islam</h1>
-      <p>Digital Marketer | WordPress Expert | SEO Specialist</p>
-    </div>
+    <div><strong>Saiful Islam</strong></div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+      <a class="btn" href="#">Let's Talk</a>
+    </nav>
   </header>
 
-  <section class="about container">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate digital marketer and WordPress developer with a BBA in Marketing. I help businesses grow online through effective strategies in SEO, Facebook Ads, Google Ads, and modern web design.
-    </p>
-  </section>
+  <div class="container">
+    <div class="left">
+      <img src="https://i.ibb.co/bsnr1zF/saiful.png" alt="Md. Saiful Islam" />
+    </div>
+    <div class="right">
+      <h2>> ABOUT ME</h2>
+      <h1>My Name is <span class="highlight">Md. Saiful Islam</span></h1>
+      <h4>Journalist, Digital Marketer, Contributing Writer, SEO Expert</h4>
+      <p>
+        Hello! I am Md. Saiful Islam, a skilled and detail-oriented Digital Marketing Specialist with a strong focus on Search Engine Optimization (SEO) and WordPress website development. With hands-on experience in keyword research, on-page and technical SEO, content optimization, and responsive web design, I help businesses enhance their online visibility and achieve top search engine rankings. I am committed to delivering data-driven strategies and high-quality digital solutions that support long-term business growth and measurable success.
+      </p>
+      <div class="info">
+        <div><span>AGE</span>23 Years</div>
+        <div><span>BORN IN</span>Chattogram, Bangladesh</div>
+        <div><span>PHONE</span>+8801609-523822</div>
+        <div><span>EMAIL</span>misaiful10@gmail.com</div>
+      </div>
+    </div>
+  </div>
 
-  <section class="skills container">
-    <h2>Skills</h2>
-    <ul>
-      <li>✅ WordPress & WooCommerce</li>
-      <li>✅ Facebook & Google Ads</li>
-      <li>✅ SEO (On-page, Off-page, Technical)</li>
-      <li>✅ Social Media Content Design</li>
-    </ul>
-  </section>
-
-  <section class="projects container">
-    <h2>Recent Projects</h2>
-    <ul>
-      <li><a href="#">E-commerce Website for Fashion Brand</a></li>
-      <li><a href="#">SEO Optimization for Local Business</a></li>
-      <li><a href="#">Landing Page for Digital Campaign</a></li>
-    </ul>
-  </section>
-
-  <section class="contact container">
-    <h2>Contact</h2>
-    <p>Email: saiful@email.com</p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/saiful</a></p>
-    <p>GitHub: <a href="#">github.com/saifulbd</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Saiful Islam. All rights reserved.</p>
-  </footer>
 </body>
 </html>
